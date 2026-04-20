@@ -34,12 +34,12 @@ export TELESINK_ACTIVEJOB_ENDPOINT=https://app.telesink.com/api/v1/sinks/your_jo
 Every job that inherits from `ApplicationJob` (or any `ActiveJob::Base`)
 automatically gets:
 
-- `Job enqueued`
-- `Job started`
+- `Job enqueued` (with queue name)
+- `Job started` (with queue name)
 - `Job succeeded` (with duration)
 - `Job failed` (with error details)
 
-Events are sent using the same conventions as the core SDK.
+Events are sent using the same conventions as the [core SDK](https://github.com/telesink/telesink-ruby).
 
 ## Manual opt-in (if you prefer)
 
