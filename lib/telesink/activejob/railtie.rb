@@ -3,8 +3,10 @@
 module Telesink
   module ActiveJob
     class Railtie < ::Rails::Railtie
-      config.to_prepare do
-        ActiveJob::Base.include Telesink::ActiveJob::Telesinkable
+      initializer "telesink.active_job" do
+        ActiveSupport.on_load(:active_job) do
+          include Telesink::ActiveJob::Telesinkable
+        end
       end
     end
   end
