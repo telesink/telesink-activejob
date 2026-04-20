@@ -1,3 +1,5 @@
+require_relative "lib/telesink/activejob/version"
+
 Gem::Specification.new do |spec|
   spec.name        = "telesink-activejob"
   spec.version     = Telesink::ActiveJob::VERSION
