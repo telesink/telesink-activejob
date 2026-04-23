@@ -26,7 +26,7 @@ No extra setup needed. It uses the same `TELESINK_ENDPOINT` as the core gem.
 To send job events to a **separate sink** (recommended for folders):
 
 ```sh
-export TELESINK_ACTIVEJOB_ENDPOINT=https://app.telesink.com/api/v1/sinks/your_jobs_sink_token/events
+export TELESINK_ACTIVEJOB_ENDPOINT="https://app.telesink.com/api/v1/sinks/your_jobs_sink_token/events"
 ```
 
 ## How it works
